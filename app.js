@@ -46,7 +46,11 @@ app.get("/contactus", function (req, res) {
 
 
 // 5 handle valid POST request
+<<<<<<< HEAD
 app.post("/contact-me", function (req, res) {
+=======
+app.post("/contactus", function (req, res) {
+>>>>>>> a83028fcdaa894ae1e2ee4312e4cfc0c00d77441
   var api_key = '98d2ef713fef8ea8c2dd504f49258889-4836d8f5-18b0628f';
   var domain = 'sandbox3b259b448e00416f873b277b961bf0dc.mailgun.org';
   var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
@@ -68,6 +72,7 @@ app.post("/contact-me", function (req, res) {
     }
   });
 
+<<<<<<< HEAD
 //  // setup e-mail data with unicode symbols
 //  const mailOptions = {
 //    from: '"Denise Case" <denisecase@gmail.com>', // sender address
@@ -79,6 +84,9 @@ app.post("/contact-me", function (req, res) {
 
  // logs to the terminal window (not the browser)
 //  console.log('\nCONTACT FORM DATA: ' + name + ' ' + email + ' ' + comment + '\n');
+=======
+
+>>>>>>> a83028fcdaa894ae1e2ee4312e4cfc0c00d77441
  })
 
 
